@@ -1,0 +1,7 @@
+<h1>There are <%= @companies.count %> Companies in our database</h1>
+
+<ul>
+<% for company in @companies %>
+  <li><%= company["name"] %></li>
+<% end %>
+</ul>
